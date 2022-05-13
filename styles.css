@@ -1,5 +1,5 @@
 html {
-	background-color: slategray;
+	background-color: gray;
 }
 
 #grid-container {
@@ -7,7 +7,21 @@ html {
 	padding: 25px;
 }
 
-#grid-container > div {
+.number-btns {
 	background-color: lightgray;
 	margin: 5px;
+}
+
+.operator-btns {
+	background-color: slategray;
+	margin: 5px;
+}
+
+.misc-btns {
+	background-color: lightgray;
+	margin: 5px;
+}
+
+#btn-equal {
+	background-color: slateblue;
 }
