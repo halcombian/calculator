@@ -1,0 +1,13 @@
+html {
+	background-color: slategray;
+}
+
+#grid-container {
+	background-color: darkgray;
+	padding: 25px;
+}
+
+#grid-container > div {
+	background-color: lightgray;
+	margin: 5px;
+}
