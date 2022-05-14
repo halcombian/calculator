@@ -11,7 +11,12 @@ for (let i = 0; i <= 9; i++) {
 }
 
 //Gives strings for operator-btns ids and textContent
-const operators = ["+", "-", "*", "/"];
+const operators = [
+	{ id: "plus", text: "+" },
+	{ id: "minus", text: "-" },
+	{ id: "multiply", text: "*" },
+	{ id: "divid", text: "/" },
+];
 
 //Creates each operator button element and assigns class and ids
 const operatorBtn = document.getElementsByClassName("operator-btns");
@@ -19,8 +24,8 @@ for (let j = 0; j < operators.length; j++) {
 	const createDiv = document.createElement("div");
 	gridContainer.append(createDiv);
 	createDiv.className = "operator-btns";
-	createDiv.id = "btn-" + operators[j];
-	operatorBtn[j].textContent = operators[j];
+	createDiv.id = "btn-" + operators[j].id;
+	operatorBtn[j].textContent = operators[j].text;
 }
 
 //Gives strings for misc-btns ids and textContent
