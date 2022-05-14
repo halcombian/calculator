@@ -8,6 +8,10 @@ for (let i = 0; i <= 9; i++) {
 	createDiv.className = "number-btns";
 	createDiv.id = "btn-" + i;
 	numberBtn[i].textContent = i;
+	numberBtn[i].onclick = () => {
+		console.log(i);
+		return i;
+	};
 }
 
 //Gives strings for operator-btns ids and textContent
@@ -26,6 +30,10 @@ for (let j = 0; j < operators.length; j++) {
 	createDiv.className = "operator-btns";
 	createDiv.id = "btn-" + operators[j].id;
 	operatorBtn[j].textContent = operators[j].text;
+	operatorBtn[j].onclick = () => {
+		console.log(operators[j].text);
+		return operators[j].text;
+	};
 }
 
 //Gives strings for misc-btns ids and textContent
@@ -44,4 +52,8 @@ for (let k = 0; k < miscBtnIds.length; k++) {
 	createDiv.className = "misc-btns";
 	createDiv.id = "btn-" + miscBtnIds[k].id;
 	miscBtn[k].textContent = miscBtnIds[k].text;
+	miscBtn[k].onclick = () => {
+		console.log(miscBtnIds[k].text);
+		return miscBtnIds[k].text;
+	};
 }
